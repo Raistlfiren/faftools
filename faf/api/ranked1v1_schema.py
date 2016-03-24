@@ -1,12 +1,11 @@
 from marshmallow_jsonapi import Schema, fields
 
 
-class Ranked1v1Schema(Schema):
+class RatingSchema(Schema):
     """
-    Represents ranked1v1 metadata
+    Represents rating metadata
     """
     id = fields.String()
-    login = fields.String()
     mean = fields.Float()
     deviation = fields.Float()
     num_games = fields.Integer()

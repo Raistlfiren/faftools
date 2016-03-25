@@ -28,7 +28,7 @@ class ClanSchema(Schema):
 
 
 class PlayerSchema(Schema):
-    id = fields.Int(dump_only=True)
+    id = fields.Int()
     login = fields.Str()
     avatar = fields.Nested(AvatarSchema)
 
